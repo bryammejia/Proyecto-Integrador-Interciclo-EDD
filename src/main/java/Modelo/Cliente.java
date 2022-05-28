@@ -7,22 +7,24 @@ package Modelo;
  */
 public class Cliente {
      
-    private int cedula;
+    private long id;
     private String nombre;
     private String apellido;
+    private String cedula;
 
-    public Cliente(int cedula, String nombre, String apellido) {
-        this.cedula = cedula;
+    public Cliente(long id, String nombre, String apellido, String cedula) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-    }
-
-    public int getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(int cedula) {
         this.cedula = cedula;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -41,9 +43,20 @@ public class Cliente {
         this.apellido = apellido;
     }
 
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
     @Override
     public String toString() {
-        return "Cliente{" + "cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + '}';
+        return "Cliente{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", cedula=" + cedula + '}';
     }
+    
+    
+
     
 }
