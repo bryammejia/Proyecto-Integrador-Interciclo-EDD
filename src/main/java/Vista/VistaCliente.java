@@ -33,15 +33,15 @@ public class VistaCliente {
             System.out.println("6. Salir");
             opcion = teclado.nextInt();
             switch (opcion) {
-                case 1:
+                case 1:crear();
                     break;
-                case 2:
+                case 2:buscar();
                     break;
-                case 3:
+                case 3:actualizar();
                     break;
-                case 4:
+                case 4:listar();
                     break;
-                case 5:
+                case 5:eliminar();
                     break;
 
             }
